@@ -283,7 +283,7 @@ def contact():
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email,
                                     to_addrs="madasar54321@gmail.com",
-                                    msg=f"Subject: Query from Shahzada's Blog!\n\nMessage: {data["message"]}\n\nContact information of sender:\nName: {data["name"]}\nPhone: {data["phone"]}\nEmail: {data["email"]}"
+                                    msg=f"Subject: Query from Shahzada's Blog!\n\nMessage: {data['message']}\n\nContact information of sender:\nName: {data['name']}\nPhone: {data['phone']}\nEmail: {data['email']}"
                                     )
     return render_template("contact.html", current_user=current_user)
 
